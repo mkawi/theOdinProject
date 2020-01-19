@@ -7,13 +7,13 @@ Lorem ipsum
 01 / 01 / 2020
 
 ## Current Progress
-1.4 The Front End
+4. The Front End
 
 ## Curriculum
 #### Web Development 101
-~1. The Basics~
-~2. Installations~
-~3. Git Basics~
+1. ~The Basics~
+2. ~Installations~
+3. ~Git Basics~
 4. The Front End
 5. JavaScript Basics
 6. The Back End
