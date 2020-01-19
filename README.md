@@ -10,18 +10,18 @@ Lorem ipsum
 1.4 The Front End
 
 ## Curriculum
-1. Web Development 101
-    ~~1. The Basics~~
-    ~~2. Installations~~
-    ~~3. Git Basics~~
++ Web Development 101
+    ~1. The Basics~
+    ~2. Installations~
+    ~3. Git Basics~
     4. The Front End
-    5, JavaScript Basics
+    5. JavaScript Basics
     6. The Back End
     7. Web Development Frameworks
     8. Pair Programming
     9. Tying it all Together
 
-2. JavaScript
++ JavaScript
     1. Introduction
     2. Organizing your JavaScript Code
     3. JavaScript in the Real World
@@ -31,7 +31,7 @@ Lorem ipsum
     7. JavaScript and Rails
     8. Finishing up with JavaScript
 
-3. HTML and CSS
++ HTML and CSS
     1. Basic HTML Page Structure
     2. Displaying and Inputting Data
     3. CSS
@@ -39,7 +39,7 @@ Lorem ipsum
     5. Responsive Design and CSS Frameworks
     6. Advanced CSS
 
-4. NodeJS
++ NodeJS
     1. Introduction to NodeJS
     2. Express
     3. Authentication
@@ -47,6 +47,6 @@ Lorem ipsum
     5. Tseting Express
     6. Final Project
 
-5. Getting Hired
++ Getting Hired
     1. Preparing for your Job Search
     2. Applying to and Interviewing for Jobs
