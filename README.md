@@ -6,20 +6,17 @@ Lorem ipsum
 ## Start Date
 01 / 01 / 2020
 
-## Current Progress
-4. The Front End
-
-## Curriculum
+## Progress
 #### Web Development 101
 1. ~The Basics~
 2. ~Installations~
 3. ~Git Basics~
 4. The Front End
 5. JavaScript Basics
-6. The Back End
-7. Web Development Frameworks
-8. Pair Programming
-9. Tying it all Together
+6. ~The Back End~
+7. ~Web Development Frameworks~
+8. ~Pair Programming~
+9. ~Tying it all Together~
 
 #### JavaScript
 10. Introduction
