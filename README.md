@@ -41,7 +41,7 @@ Lorem ipsum
 4.2 Express
 4.3 Authentication
 4.4 APIs
-4.5 Tseting Express
+4.5 Testing Express
 4.6 Final Project
 
 #### Getting Hired
