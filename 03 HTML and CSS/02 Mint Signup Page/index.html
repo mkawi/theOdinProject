@@ -9,17 +9,25 @@
 
 </head>
 <body>
-    <nav>
+    <div class="banner">
         <p>Already have an Intuit account?<br>
-        <a>I forgot my User ID or Password</a></p>
+        <a href="#">I forgot my User ID or Password</a></p>
         <button>Sign In</button>
-    </nav>
+    </div>
 
+    <div class="wrapper">
+    <header>
+        <div class="logo"><img src="intuit_logo.png"></div>
+        <nav class="header-nav">
+            <div id="mint">mint</div>
+            <div id="quickbooks">quickbooks</div>
+            <div id="turbotax">turbotax</div>
+        </nav>
+    </header>
     <div class="container">
         <div class="form-container">
         <h2>Create an Intuit account</h2>
-        <p>One account for everything Intuit, including Mint.</p>
-        <p><a>Learn more</a></p>
+        <p class="desc">One account for everything Intuit. <a href="#" class="learn-more">Learn more</a></p>
 
         <form>
             <label for="email">Email address</label>
@@ -35,22 +43,26 @@
             <input type="button" value="Create Account" id="form-btn">
         </form>
 
-        <p>By clicking Create account, you agree to our Terms and have read and acknowledge our Privacy Statement.</p>
+        <p class="disclaimer">By clicking Create account, you agree to our <a href="#">Terms</a> and have read and acknowledge our <a href="#">Privacy Statement.</a></p>
         </div>
         <div class="form-footer">
-            <p>Invisible reCAPTCHA by Google Privacy Policy and Terms of Use.</p>
+            <p>Invisible reCAPTCHA by Google <a href="#">Privacy Policy</a> and <a href="#">Terms of Use.</a></p>
         </div>
     </div>
 
     <footer>
-        <ul class="footer-links">
-            <li>Legal</li>
-            <li>Privacy</li>
-            <li>Security</li>
+        <ul class="footer-links fine-print">
+            <li><a href="#">Legal</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Security</a></li>
         </ul>
 
-        <p>© 2020 Intuit, Inc. All rights reserved. Intuit, QuickBooks, QB, TurboTax, ProConnect and Mint are registered trademarks of Intuit Inc.</p>
-        <p>Terms and conditions, features, support, pricing, and service options subject to change without notice.</p>
+        <div class="fine-print">
+            © 2020 Intuit, Inc. All rights reserved. Intuit, QuickBooks, QB, TurboTax, ProConnect and Mint are registered trademarks of Intuit Inc.
+            <br>
+            Terms and conditions, features, support, pricing, and service options subject to change without notice.
+        </div>
     </footer>
+    </div>
 </body>
 </html>
