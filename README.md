@@ -1,12 +1,10 @@
 # the Odin Project
-
-## Summary
-Lorem ipsum
+Summary goes here lorem ipsum ...
 
 ## Start Date
 01 / 01 / 2020
 
-## Progress
+## Curriculum
 #### Web Development 101
 1.1 ~The Basics~
 1.2 ~Installations~
@@ -30,7 +28,7 @@ Lorem ipsum
 
 #### HTML and CSS
 3.1 Basic HTML Page Structure
-3.2 Displaying and Inputting Data
+3.2 ~Displaying and Inputting Data~
 3.3 CSS
 3.4 Design and UX
 3.5 Responsive Design and CSS Frameworks
