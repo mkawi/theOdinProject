@@ -1,12 +1,281 @@
-main {
-	margin: 0 auto;
-	width: 50%;
-}
+/* Defaults */
 
 img {
 	max-width: 100%;
 }
 
+h1 {
+	font-size: 2.5rem;
+	font-style: oblique;
+	margin-bottom: 40px;
+	margin-top: 60px;
+}
+
+h3 {
+	font-size: 1.4em;
+	margin-bottom: 20px;
+}
+
+figcaption {
+	font-size: 1.05em;
+	line-height: 1.25em;
+	color: rgb(110, 110, 110);
+	padding-top: 8px;
+	width: 80%;
+}
+
+figcaption span {
+	font-size: 0.85em;
+	color: rgb(151, 151, 151);
+}
+
+.byline {
+	padding-bottom: 20px;
+}
+
+.byline h4 {
+	font-family: Helvetica, sans-serif;
+	font-size: 0.9em;
+	font-weight: bold;
+	padding-bottom: 20px;
+}
+
+.byline span {
+	font-family: Helvetica, sans-serif;
+	font-size: 0.85em;
+	color: rgb(110, 110, 110);
+}
+
+.inline {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.social-share {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	font-size: 0.8em;
+	font-weight: bold;
+}
+
+.social-share i {
+	margin: 0 5px;
+}
+
+.circle {
+	background-color: rgb(231, 231, 231);
+	border-radius: 50%;
+	height: 30px;
+	width: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* Layout */
+
+main {
+	margin: 0 auto;
+	position: relative;
+	top: 43px;
+}
+
+.wrapper {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.advert {
+	background-color: rgb(247, 247, 247);
+	display: flex;
+	justify-content: center;
+	min-height: 350px;
+	font-family: Helvetica, sans-serif;
+	font-size: 0.7rem;
+	text-transform: uppercase;
+	box-sizing: border-box;
+	padding: 20px;
+	color: rgb(204, 204, 204);
+}
+
+/* Header Navigation */
+
+header {
+	padding: 3px 20px;
+	box-sizing: border-box;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: white;
+	border-bottom: 1px solid rgb(211, 211, 211);
+	position: fixed;
+	z-index: 1;
+}
+
+.footer-ad {
+	min-height: 185px;
+}
+
+.logo {
+	margin: 7px 0 0 85px;
+	width: 190px;
+}
+
+.right-nav button {
+	background-color: #4e7794;
+	color: white;
+	padding: 10px 15px;
+	border: 0;
+	border-radius: 3px;
+	margin-left: 3px;
+	font-size: 0.7em;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.right-nav button:hover {
+	background-color: #336891;
+}
+
+.left-nav {
+	font-family: Helvetica, sans-serif;
+	font-size: 0.8em;
+	font-weight: bold;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+.search,
+.hamburger {
+	width: 15px;
+	padding-right: 20px;
+}
+
+.search:hover,
+.hamburger:hover {
+	opacity: 0.7;
+}
+
+/* Article */
+
+.container {
+	width: 75%;
+	margin: 0 auto;
+	display: flex;
+}
+
+.primary-column {
+	display: flex;
+	flex-direction: column;
+	margin-left: 12em;
+	width: 60%;
+}
+
+.primary-column p {
+	font-size: 1.3em;
+	line-height: 1.4em;
+	margin-bottom: 20px;
+}
+
+.unlock-articles {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	flex-direction: column;
+	font-family: Helvetica, sans-serif;
+	font-weight: bold;
+	line-height: 1.25em;
+	position: relative;
+	bottom: 10px;
+}
+
+.unlock-articles::before,
+.unlock-articles::after {
+	width: 12%;
+	border-top: 1px solid rgb(194, 194, 194);
+	content: "";
+	position: relative;
+	bottom: -20px;
+	padding: 20px 0;
+}
+
+/* More Articles */
+
 .article-structure {
 	display: flex;
+}
+
+/* Footer */
+
+footer {
+	width: 100%;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	font-family: Helvetica, sans-serif;
+}
+
+.footer-heading {
+	text-transform: uppercase;
+	font-weight: 600;
+	margin-bottom: 7px;
+	font-size: 0.9em;
+}
+
+.upper-footer {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+	margin-bottom: 15px;
+	font-size: 0.7em;
+}
+
+.upper-footer a:link {
+	color: gray;
+	text-decoration: none;
+}
+
+.footer-logo {
+	width: 190px;
+}
+
+.main-footer {
+	display: flex;
+	justify-content: space-between;
+	font-size: 0.8em;
+	margin-bottom: 40px;
+}
+
+.main-footer li {
+	padding: 7px 0;
+}
+
+.highlighted {
+	font-size: 1.2em;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.non-emphasized {
+	font-size: 0.9em;
+	line-height: 1.2em;
+}
+
+.lower-footer {
+	margin: 20px auto;
+	font-size: 0.7em;
+	color: rgb(116, 116, 116);
+}
+
+.lower-footer ul {
+	display: flex;
+	flex-direction: row;
+}
+
+.lower-footer li {
+	padding: 10px;
 }
