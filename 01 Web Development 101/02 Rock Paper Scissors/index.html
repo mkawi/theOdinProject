@@ -7,65 +7,6 @@
     <title>Rock Paper Scissors</title>
 </head>
 <body>
-    <script>
-        const options = ['rock', 'paper', 'scissors'];
-        const computerSelection = computerPlay();
-
-        function computerPlay() {
-            const num = Math.floor(Math.random() * 3);
-            return options[num];
-        }
-
-        function playRound(playerSelection, computerSelection) {
-            if (playerSelection === computerSelection) {
-                return `It's a draw!`;
-            } else if (playerSelection.toLowerCase() === 'rock' && computerSelection === 'paper') {
-                return `You lose! Paper beats rock!`;
-            } else if (playerSelection.toLowerCase() === 'paper' && computerSelection === 'rock') {
-                return `You win! Paper beats rock!`;
-            } else if (playerSelection.toLowerCase() === 'paper' && computerSelection === 'scissors') {
-                return `You lose! Scissors beats paper!`;
-            } else if (playerSelection.toLowerCase() === 'scissors' && computerSelection === 'paper') {
-                return `You win! Scissors beats paper!`;
-            } else if (playerSelection.toLowerCase() === 'scissors' && computerSelection === 'rock') {
-                return `You lose! Rock beats scissors!`;
-            } else if (playerSelection.toLowerCase() === 'rock' && computerSelection === 'scissors') {
-                return `You win! Rock beats scissors!`;
-            } else {
-                return `Please enter either Rock, Paper or Scissors.`;
-            }
-        }
-
-        // function game() {
-        //     let playerWinCount = 0;
-        //     let computerWinCount = 0;
-        //     let message;
-
-        //     while (playerWinCount + computerWinCount < 5) {
-        //         playerSelection = prompt("Choose 'Rock', 'Paper' or 'Scissors'.")
-        //         let winner = playRound(playerSelection, computerSelection);
-
-        //         if (winner === "player") {
-        //             playerWinCount += 1;
-        //             message = "You won! " + playerSelection.replace(playerSelection[0], playerSelection[0]) + " beats " + computerSelection.replace(computerSelection[0], computerSelection[0].toUpperCase()) + ".";
-        //             } else if (winner === "computer") {
-        //             computerWinCount += 1;
-        //             message = "The computer won! " + computerSelection.replace(computerSelection[0], computerSelection[0].toUpperCase()) + " beats " + playerSelection.replace(playerSelection[0], playerSelection[0].toUpperCase()) + ".";
-        //             } else if (winner === "tie") {
-        //             message = "It's a Tie! Try again."; 
-        //             } else {
-        //             message = "An error occured. Please try again."
-        //         }
-
-        //         console.log(message);
-        //         console.log("The score is: " + playerWinCount + " : " + computerWinCount);
-        //     }
-
-        //     console.log("The final winner is: " + ((playerWinCount < computerWinCount) ? "The Computer" : "You"));
-        // }
-
-        game();
-
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
