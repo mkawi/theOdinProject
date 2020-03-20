@@ -11,9 +11,9 @@ Summary goes here lorem ipsum ...
 3. ~Git Basics~
 4. ~The Front End~
 5. JavaScript Basics
-6. The Back End (skipped)
-7. Web Development Frameworks (skipped)
-8. Pair Programming (skipped)
+6. ~The Back End~ (skipped)
+7. ~Web Development Frameworks~ (skipped)
+8. ~Pair Programming~ (skipped)
 9. ~Tying it all Together~
 
 #### JavaScript
