@@ -205,3 +205,85 @@ reset.addEventListener("click", () => {
 	screen.innerText = "0";
 	displayVal = [0];
 });
+
+// ==================
+// Keyboard Support
+// ==================
+
+document.addEventListener("keydown", (e) => {
+	switch (e.key) {
+		case "1":
+			pressKey(1);
+			break;
+		case "2":
+			pressKey(2);
+			break;
+		case "3":
+			pressKey(3);
+			break;
+		case "4":
+			pressKey(4);
+			break;
+		case "5":
+			pressKey(5);
+			break;
+		case "6":
+			pressKey(6);
+			break;
+		case "7":
+			pressKey(7);
+			break;
+		case "8":
+			pressKey(8);
+			break;
+		case "9":
+			pressKey(9);
+			break;
+		case "0":
+			pressKey(0);
+			break;
+		case ".":
+			pressKey("");
+			trimOperations(".");
+			for (let i = displayVal.length - 2; i >= 0; i--) {
+				if (typeof displayVal[i] === "string") {
+					if (displayVal[i] === ".") {
+						displayVal.pop();
+						screen.innerText = screen.innerText.slice(
+							0,
+							screen.innerText.length - 1
+						);
+					}
+					break;
+				}
+			}
+			break;
+		case "Delete":
+			displayVal.pop();
+			screen.innerText = screen.innerText.slice(0, screen.innerText.length - 1);
+			break;
+		case "Backspace":
+			displayVal.pop();
+			screen.innerText = screen.innerText.slice(0, screen.innerText.length - 1);
+			break;
+		case "+":
+			pressKey("+");
+			trimOperations("+");
+			break;
+		case "-":
+			pressKey("-");
+			trimOperations("-");
+			break;
+		case "*":
+			pressKey("*");
+			trimOperations("*");
+			break;
+		case "/":
+			pressKey("/");
+			trimOperations(`/`);
+			break;
+		case "Enter":
+			operation();
+			break;
+	}
+});
