@@ -1,22 +1,26 @@
 # the Odin Project
+
 Summary goes here lorem ipsum ...
 
 ## Start Date
+
 01 / 01 / 2020
 
 ## Curriculum
+
 #### Web Development 101
+
 1. ~The Basics~
 2. ~Installations~
 3. ~Git Basics~
 4. ~The Front End~
-5. JavaScript Basics
-6. ~The Back End~ (skipped)
-7. ~Web Development Frameworks~ (skipped)
-8. ~Pair Programming~ (skipped)
-9. ~Tying it all Together~
+5. ~JavaScript Basics~
+6. ~The Back End~
+7. ~Pair Programming~
+8. ~Tying it all Together~
 
 #### JavaScript
+
 10. Introduction
 11. Organizing your JavaScript Code
 12. JavaScript in the Real World
@@ -27,6 +31,7 @@ Summary goes here lorem ipsum ...
 17. Finishing up with JavaScript
 
 #### HTML and CSS
+
 18. Basic HTML Page Structure
 19. ~Displaying and Inputting Data~
 20. CSS
@@ -35,6 +40,7 @@ Summary goes here lorem ipsum ...
 23. Advanced CSS
 
 #### NodeJS
+
 24. Introduction to NodeJS
 25. Express
 26. Authentication
@@ -43,5 +49,6 @@ Summary goes here lorem ipsum ...
 29. Final Project
 
 #### Getting Hired
+
 30. Preparing for your Job Search
 31. Applying to and Interviewing for Jobs
