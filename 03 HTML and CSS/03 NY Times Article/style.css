@@ -11,6 +11,12 @@ h1 {
 	margin-top: 60px;
 }
 
+h2 {
+	font-size: 15px;
+	font-family: helvetica, arial, sans-serif;
+	padding: 17px 0;
+}
+
 h3 {
 	font-size: 1.4em;
 	margin-bottom: 20px;
@@ -80,6 +86,7 @@ main {
 	margin: 0 auto;
 	position: relative;
 	top: 43px;
+	margin-bottom: 75px;
 }
 
 .wrapper {
@@ -98,6 +105,10 @@ main {
 	box-sizing: border-box;
 	padding: 20px;
 	color: rgb(204, 204, 204);
+}
+
+.advert:first-child {
+	min-height: 125px;
 }
 
 /* Header Navigation */
@@ -120,7 +131,7 @@ header {
 }
 
 .logo {
-	margin: 7px 0 0 85px;
+	margin: 7px 0 0;
 	width: 190px;
 }
 
@@ -162,7 +173,7 @@ header {
 /* Article */
 
 .container {
-	width: 75%;
+	width: 85%;
 	margin: 0 auto;
 	display: flex;
 }
@@ -172,6 +183,7 @@ header {
 	flex-direction: column;
 	margin-left: 12em;
 	width: 60%;
+	line-height: 3.25rem;
 }
 
 .primary-column p {
@@ -202,10 +214,106 @@ header {
 	padding: 20px 0;
 }
 
+p.disclaimer {
+	font-family: helvetica, arial, sans-serif;
+	font-size: 0.75em;
+	line-height: 1rem;
+	color: rgb(102, 102, 102);
+	margin: 0px auto 1em;
+	padding-bottom: 10px;
+}
+
+.read {
+	background-color: rgb(86, 123, 149);
+	color: white;
+	display: block;
+	font-family: nyt-franklin, helvetica, arial, sans-serif;
+	font-size: 0.8125rem;
+	font-weight: 600;
+	letter-spacing: 0.05em;
+	line-height: 1.5rem;
+	margin-left: auto;
+	margin-right: auto;
+	text-transform: uppercase;
+	width: 100%;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(50, 104, 145);
+	border-image: initial;
+	border-radius: 3px;
+	padding: 5px 0px;
+	transition: background-color 0.6s ease 0s;
+}
+
 /* More Articles */
+
+.more-articles {
+	display: flex;
+}
+
+.more-in-space {
+	padding-top: 10px;
+	border-top: 1px solid rgb(0, 0, 0);
+}
+
+.most-popular {
+	padding-top: 10px;
+	border-top: 1px solid rgb(0, 0, 0);
+}
+
+.left-column {
+	flex: 7;
+	padding-right: 15px;
+}
+
+.right-column {
+	flex: 3;
+	padding-left: 15px;
+}
 
 .article-structure {
 	display: flex;
+	flex-wrap: wrap;
+}
+
+.article-structure > .article-grid {
+	flex-grow: 1;
+	width: 30%;
+}
+
+.editors-picks {
+	padding-top: 10px;
+	border-top: 1px solid rgb(0, 0, 0);
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.article-grid {
+	padding-right: 10px;
+	padding-bottom: 20px;
+}
+
+.article-grid h3 {
+	font-size: 1.125rem;
+	font-weight: 500;
+	line-height: 22px;
+	margin: 10px 0;
+}
+
+.article-grid p {
+	font-family: helvetica, arial, sans-serif;
+	font-weight: 500;
+	font-size: 0.75rem;
+	line-height: 1.25rem;
+	letter-spacing: 0.3px;
+	color: rgb(153, 153, 153);
+}
+
+.most-popular li {
+	border-top: 1px solid rgb(226, 226, 226);
+	padding: 15px 0px;
+	font-size: 1.1875rem;
+	line-height: 1.4375rem;
 }
 
 /* Footer */
