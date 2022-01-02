@@ -9,7 +9,7 @@ Summary goes here lorem ipsum ...
 1. ~Introduction~
 2. ~Installations~
 3. ~Git Basics~
-4. HTML Foundations
+4. ~HTML Foundations~
 5. CSS Foundations
 6. Flexbox
 7. JavaScript Basics
