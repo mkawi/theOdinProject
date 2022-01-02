@@ -1,0 +1,72 @@
+html,
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background: black;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.calculator {
+	background: black;
+	width: 450px;
+}
+
+.screen {
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	width: 100%;
+	height: 120px;
+	background: rgb(235, 235, 235);
+	padding: 20px;
+	font-size: 36px;
+	border-bottom: 1px solid gray;
+	margin-bottom: 4px;
+}
+
+.keypad {
+	height: 408px;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(6, 1fr);
+	grid-column-gap: 4px;
+	grid-row-gap: 4px;
+}
+
+.btn {
+	background: rgb(71, 71, 71);
+	margin: 1px;
+	font-size: 20px;
+	color: white;
+	height: 100px;
+}
+
+.btn:hover {
+	border: 1px orange solid;
+	opacity: 0.75;
+}
+
+button {
+	border-width: 0;
+}
+
+button:focus {
+	outline-color: orange;
+}
+
+.orange {
+	background: orange;
+	font-size: 30px;
+}
+
+.wide {
+	grid-column: span 2;
+}
+
+.tinted {
+	background-color: rgb(134, 134, 134);
+}
