@@ -11,7 +11,7 @@ Summary goes here lorem ipsum ...
 3. ~Git Basics~
 4. ~HTML Foundations~
 5. ~CSS Foundations~
-6. Flexbox
+6. ~Flexbox~
 7. JavaScript Basics
 8. ~The Back End~
 9. ~Conclusion~

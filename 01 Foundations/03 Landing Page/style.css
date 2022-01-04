@@ -1,0 +1,210 @@
+html {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+* {
+	box-sizing: inherit;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	padding: 0;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 0;
+}
+
+header ul {
+	display: flex;
+	gap: 40px;
+	list-style: none;
+	font-size: 14px;
+	align-items: center;
+}
+
+ul a {
+	color: rgb(255, 225, 225);
+	font-size: 14px;
+	text-decoration: none;
+}
+
+ul a:hover {
+	color: black;
+}
+
+.header-section {
+	background-color: #ed171f;
+	color: white;
+	display: flex;
+	justify-content: space-between;
+}
+
+.logo {
+	background-image: url("./images/logo.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	padding: 0px;
+	margin: 0px;
+	width: 200px;
+	height: 60px;
+}
+
+.hero {
+	display: flex;
+	padding: 50px 0;
+	margin-bottom: 50px;
+}
+
+.hero h1 {
+	font-size: 48px;
+	font-weight: 700;
+	color: #f9faf8;
+	margin: 0;
+	padding: 0;
+}
+
+.hero p {
+	color: rgb(255, 225, 225);
+	font-size: 16px;
+	margin: 10px 0;
+}
+
+.hero .placeholder {
+	width: 100%;
+	flex-shrink: 1;
+	background-image: url("./images/avengers.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 20px;
+	margin: 0 0 0 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 9px;
+}
+
+.btn {
+	padding: 9px 30px;
+	border: 0;
+	border-radius: 9px;
+	color: white;
+	font-weight: 700;
+	font-size: 14px;
+	background-color: #ed171f;
+}
+
+.btn:hover {
+	background-color: white;
+	border-color: white;
+	color: #ed171f;
+}
+
+.btn-dark {
+	margin-top: 10px;
+	background-color: black;
+	border: 2px solid #ed171f;
+}
+
+.btn-light {
+	border: 2px solid white;
+}
+
+.below-fold {
+	padding-top: 20px;
+	padding-bottom: 75px;
+}
+
+.below-fold h2 {
+	text-align: center;
+	font-size: 32px;
+	font-weight: 700;
+}
+
+.card-container {
+	display: flex;
+	gap: 40px;
+	padding: 20px 0;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.info-img {
+	width: 150px;
+	height: 150px;
+	border: 4px solid #ed171f;
+	border-radius: 9px;
+}
+
+.quote-section {
+	background-color: black;
+	padding: 100px 0;
+}
+
+.quote-section h2 {
+	font-size: 36px;
+	font-weight: 100;
+	font-style: italic;
+	color: rgb(238, 238, 238);
+	padding: 0 60px;
+	margin: 0;
+}
+
+.quote-section h3 {
+	color: white;
+	text-align: right;
+	margin: 0;
+	padding-top: 20px;
+	padding-right: 100px;
+}
+
+.cta-section {
+	padding: 80px 0;
+}
+
+.cta-banner {
+	background-color: #ed171f;
+	padding: 20px 100px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-radius: 9px;
+	color: white;
+}
+
+.cta-banner h3 {
+	margin-bottom: 0;
+}
+
+.cta-banner p {
+	margin-top: 0;
+	color: rgb(255, 225, 225);
+}
+
+footer {
+	background-color: #ed171f;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 30px 0;
+	font-size: 16px;
+}
