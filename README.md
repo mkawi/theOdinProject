@@ -31,7 +31,7 @@ Summary goes here lorem ipsum ...
 
 #### HTML and CSS
 
-18. Basic HTML Page Structure
+18. ~Basic HTML Page Structure~
 19. ~Displaying and Inputting Data~
 20. CSS
 21. Accessibility
