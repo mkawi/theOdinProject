@@ -35,7 +35,7 @@ Summary goes here lorem ipsum ...
 19. ~Displaying and Inputting Data~
 20. ~CSS~
 21. ~Accessibility~
-22. Design and UX
+22. ~Design and UX~
 23. Responsive Design and CSS Frameworks
 24. Advanced CSS
 
