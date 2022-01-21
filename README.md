@@ -36,7 +36,7 @@ Summary goes here lorem ipsum ...
 20. ~CSS~
 21. ~Accessibility~
 22. ~Design and UX~
-23. Responsive Design and CSS Frameworks
+23. ~Responsive Design and CSS Frameworks~
 24. Advanced CSS
 
 #### NodeJS
