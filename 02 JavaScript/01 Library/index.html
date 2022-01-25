@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Library</title>
+</head>
+<body>
+    <header>
+        <h1>Library</h1>
+    </header>
+    <main>
+        <div class="container">
+            <div class="card add-new">
+                <form action="POST">
+                    <div>
+                        <label for="book-title"><h6>Title</h6></label>
+                        <input type="text" name="book-title" placeholder="Book Title" id="book-title">
+                    </div>
+                    <div>
+                        <label for="book-author"><h6>Author</h6></label>
+                        <input type="text" for="book-author" placeholder="Author Name" id="book-author">
+                    </div>
+                    <div>
+                        <label for="book-pages"><h6>Pages</h6></label>
+                        <input type="number" for="book-pages" placeholder="Number of Pages" id="book-pages">
+                    </div>
+                    <div>
+                        <label for="book-read"><h6>Read this book?</h6></label>
+                        <input type="checkbox" name="book-read" id="book-read">
+                    </div>
+                    <input type="button" value="Add Book" id="add-btn">
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>

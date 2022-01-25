@@ -1,0 +1,82 @@
+html {
+	font-size: 16px;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+		Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: inherit;
+}
+
+body {
+	background-color: rgb(248, 244, 238);
+	width: 100%;
+	margin: 0 auto;
+}
+
+header {
+	background-color: rgb(216, 197, 182);
+	width: 100%;
+	position: absolute;
+	top: 0;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+main {
+	max-width: 100rem;
+	margin: 0 auto;
+	margin-top: 8rem;
+	padding: 2rem 4rem;
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 4rem;
+	flex-wrap: wrap;
+	flex-basis: 25%;
+}
+
+.card {
+	min-width: 20rem;
+	min-height: 27.5rem;
+	width: calc(25% - 4rem);
+	padding: 2rem;
+	background-color: rgb(216, 197, 182);
+	text-align: center;
+}
+
+form > div {
+	margin-bottom: 1.25rem;
+}
+
+h3 {
+	margin: 0;
+	margin-bottom: 2rem;
+}
+
+h6 {
+	font-weight: 400;
+	font-size: 1rem;
+	text-transform: uppercase;
+	color: rgb(97, 85, 75);
+	margin: 0.25rem 0;
+}
+
+input {
+	width: 100%;
+	height: 1.75rem;
+}
+
+.remove {
+	margin-top: 2rem;
+	width: 100%;
+	height: 1.75rem;
+}
