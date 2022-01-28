@@ -1,0 +1,176 @@
+html {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: 16px;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+		Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: inherit;
+}
+
+body {
+	margin: 0 auto;
+	background-color: rgb(252, 238, 229);
+	background: url("./images/background.jpg") center center fixed no-repeat;
+	background-size: cover;
+	height: 100vh;
+}
+
+header {
+	background-color: rgba(0, 0, 0, 0.5);
+	backdrop-filter: blur(6px);
+	width: 100%;
+	padding: 2.5rem 2.5rem 0 2.5rem;
+}
+
+header h1 {
+	font-family: "M PLUS Rounded 1c", sans-serif;
+	font-size: 3.5rem;
+	color: wheat;
+	text-align: center;
+	text-transform: uppercase;
+	margin: 1rem auto;
+}
+
+nav ul {
+	color: wheat;
+	list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 2rem;
+	margin: 0;
+	margin-block-start: 0;
+	margin-block-end: 0;
+	margin-inline-start: 0;
+	margin-inline-end: 0;
+	padding-inline-start: 0;
+}
+
+main {
+	background-color: rgba(0, 0, 0, 0.75);
+	backdrop-filter: blur(6px);
+	max-width: 900px;
+	width: 60%;
+	min-width: 450px;
+	margin: 4rem auto;
+	padding: 2rem;
+	border-radius: 2rem;
+	color: wheat;
+}
+
+main h1 {
+	font-family: "M PLUS Rounded 1c", sans-serif;
+	color: white;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+footer {
+	background-color: rgba(0, 0, 0, 0.75);
+	backdrop-filter: blur(6px);
+	font-size: 0.85rem;
+	text-align: center;
+	color: wheat;
+	width: 100%;
+	padding: 1rem;
+}
+
+[data-tab-content] {
+	display: none;
+}
+
+.active[data-tab-content] {
+	display: block;
+}
+
+.center {
+	text-align: center;
+}
+
+#home .hero .btn-container {
+	text-align: center;
+	margin: 2rem auto;
+	border: 2px solid wheat;
+	width: 175px;
+	padding: 1rem 2rem;
+	color: white;
+}
+
+#home .hero .btn-container:hover {
+	background-color: wheat;
+	color: black;
+	cursor: pointer;
+}
+
+#home img {
+	width: 40%;
+	padding: 2rem;
+}
+
+.tab:hover {
+	border-bottom: 4px solid wheat;
+	color: white;
+	cursor: pointer;
+}
+
+.tab {
+	padding: 1rem;
+	border-bottom: 4px solid rgba(0, 0, 0, 0.5);
+}
+
+.underline {
+	border-bottom: 4px solid wheat;
+	color: white;
+}
+
+.contact-container {
+	display: flex;
+	gap: 3rem;
+	flex-basis: 50%;
+	padding: 1rem;
+}
+
+.contact-container img {
+	width: 100%;
+}
+
+.left-section,
+.right-section {
+	width: 50%;
+	flex-basis: 50%;
+}
+
+.menu-container ul {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.menu-container li {
+	display: flex;
+}
+
+.menu-container .burger-img {
+	width: 50%;
+	position: relative;
+}
+
+.menu-container img {
+	position: relative;
+	width: 100%;
+	padding-right: 2rem;
+}
+
+.title {
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 2px dotted;
+	padding-bottom: 1rem;
+}
