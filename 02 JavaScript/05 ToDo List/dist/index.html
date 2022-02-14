@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../fontawesome/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>ToDo List</title>
+</head>
+<body>
+    <header>
+        <h1><i class="fas fa-clipboard-check" style="color: rgb(255, 158, 190);"></i> ToDos</h1>
+    </header>
+    <main>
+        <aside>
+            <button class="button-project" id="inbox">
+                <div class="wrapper">
+                    <i class="fas fa-inbox"></i>
+                    <h4>Inbox</h4>
+                </div>
+                <span class="counter">0</span>
+            </button>
+            <button class="button-project" id="today">
+                <div class="wrapper">
+                    <i class="fas fa-calendar-day"></i>
+                    <h4>Today</h4>
+                </div>
+                <span class="counter">0</span>
+            </button>
+            <button class="button-project" id="week">
+                <div class="wrapper">
+                    <i class="fas fa-calendar-week"></i>
+                    <h4>This Week</h4>
+                </div>
+                <span class="counter">0</span>
+            </button>
+            <div class="projects">
+                <h2>Projects</h2>
+                <div class="sub-category"></div>
+                <button class="button-project" id="add-project">
+                    <div class="wrapper">
+                        <i class="far fa-plus-square"></i>
+                        <h4>Add Project</h4>
+                    </div>
+                </button>
+                <div class="add-project-popup inactive" id="add-project-popup">
+                    <input class="input-add-project" id="input-add-project" type="text" placeholder="Enter project name">
+                    <div class="add-project-buttons">
+                        <button class="button-add-project" id="button-add-project">
+                            Add
+                        </button>
+                        <button class="button-cancel-project" id="button-cancel-project">
+                            Cancel
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <div class="todo-container"></div>
+    </main>
+    <script src="./main.js"></script>
+</body>
+</html>
