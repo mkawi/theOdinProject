@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+		<title>UI Testing</title>
+	</head>
+	<body>
+		<nav>
+			<a href="#home">Home</a>
+			<div class="dropdown-menu">
+				<a href="#" class="dropdown-btn">
+					Services
+					<i class="fa fa-caret-down"></i>
+				</a>
+				<div class="dropdown-content hide">
+					<a href="#">Hosting</a>
+					<a href="#">Design</a>
+					<a href="#">Development</a>
+					<a href="#">Maintenance</a>
+				</div>
+			</div>
+			<a href="#about">About</a>
+			<a href="#contact">Contact</a>
+		</nav>
+		<main>
+			<div class="image-slider">
+				<div class="slide">
+					<img src="./images/01.jpg" class="visible" />
+					<img src="./images/02.jpg" />
+					<img src="./images/03.jpg" />
+					<img src="./images/04.jpg" />
+					<img src="./images/05.jpg" />
+				</div>
+				<div class="overlay">
+					<div class="arrows">
+						<div class="left-arrow arrow">
+							<i class="fa fa-arrow-left"></i>
+						</div>
+						<div class="right-arrow arrow">
+							<i class="fa fa-arrow-right"></i>
+						</div>
+					</div>
+					<div class="nav-dots">
+						<div class="dot active"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>
+					</div>
+				</div>
+			</div>
+
+			<form>
+				<div class="form-block">
+					<label for="mail">Email<span class="red">*</span></label>
+					<input type="email" name="mail" id="mail" />
+				</div>
+
+				<div class="form-block">
+					<label for="country">Country<span class="red">*</span></label>
+					<input type="text" name="country" id="country" />
+				</div>
+
+				<div class="form-block">
+					<label for="zip">Zip Code<span class="red">*</span></label>
+					<input type="text" name="zip" id="zip" />
+				</div>
+
+				<div class="form-block">
+					<label for="pass">Password<span class="red">*</span></label>
+					<input type="password" name="pass" id="pass" />
+				</div>
+
+				<div class="form-block">
+					<button>Submit</button>
+				</div>
+			</form>
+		</main>
+		<script src="./script.js"></script>
+	</body>
+</html>
