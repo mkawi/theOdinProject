@@ -21,9 +21,9 @@ Summary goes here lorem ipsum ...
 #### JavaScript
 
 10. ~Introduction~
-11. Organizing your JavaScript Code
-12. JavaScript in the Real World
-13. Asynchronous JavaScript and APIs
+11. ~Organizing your JavaScript Code~
+12. ~JavaScript in the Real World~
+13. ~Asynchronous JavaScript and APIs~
 14. Testing JavaScript
 15. React JS
 16. JavaScript and the Backend
