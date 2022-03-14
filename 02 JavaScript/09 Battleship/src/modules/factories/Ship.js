@@ -1,13 +1,22 @@
 class Ship {
-	constructor(length, direction, boolean) {
+	constructor(length, startCoords, direction = "horizontal", sunk = false) {
 		this.length = length;
-		this.hits = Array(length).fill(null);
+		this.startCoords = startCoords;
 		this.direction = direction;
-		this.sunk = boolean;
+		this.sunk = sunk;
+		this.hits = Array(length).fill(null);
 	}
 
 	getLength() {
 		return this.length;
+	}
+
+	getStartCoords() {
+		return this.startCoords;
+	}
+
+	getDirection() {
+		return this.direction;
 	}
 
 	getHits() {
