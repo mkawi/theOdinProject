@@ -1,0 +1,80 @@
+body {
+	background-color: #111e39;
+}
+
+#game-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#game-board-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	height: 80vh;
+}
+
+.game-board {
+	display: grid;
+	grid-template-columns: 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px;
+	grid-template-rows: 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px;
+	margin: 50px;
+}
+
+.game-board-square {
+	width: 58px;
+	height: 58px;
+	box-sizing: border-box;
+	background-color: #596291;
+	border: 5px solid rgb(32, 40, 77);
+}
+
+.player-game-board-square {
+	width: 58px;
+	height: 58px;
+	box-sizing: border-box;
+	background-color: #596291;
+	border: 5px solid rgb(32, 40, 77);
+}
+
+.ai-game-board-square {
+	width: 58px;
+	height: 58px;
+	box-sizing: border-box;
+	background-color: #596291;
+	border: 5px solid rgb(32, 40, 77);
+}
+
+.player-game-board-square[data-ship-id="0"],
+.player-game-board-square[data-ship-id="1"],
+.player-game-board-square[data-ship-id="2"],
+.player-game-board-square[data-ship-id="3"],
+.player-game-board-square[data-ship-id="4"] {
+	background-color: #06d6a0;
+}
+
+button {
+	width: 150px;
+	height: 75px;
+	margin: 10px;
+	background-color: #06d6a0;
+	border: 5px solid rgb(32, 40, 77);
+
+	font-family: monospace;
+	font-weight: 900;
+	font-size: 20px;
+}
+
+#game-over-container {
+	margin: 40px;
+	text-align: center;
+}
+
+h2 {
+	font-family: monospace;
+	font-size: 40px;
+	color: #596291;
+	text-decoration: underline;
+}
