@@ -23,31 +23,32 @@
 12. ~JavaScript in the Real World~
 13. ~Asynchronous JavaScript and APIs~
 14. ~Testing JavaScript~
-15. React JS
-16. JavaScript and the Backend
-17. Finishing up with JavaScript
+15. Intermediate Git
+16. React JS
+17. JavaScript and the Backend
+18. Finishing up with JavaScript
 
 #### HTML and CSS
 
-18. ~Basic HTML Page Structure~
-19. ~Displaying and Inputting Data~
-20. ~CSS~
-21. ~Accessibility~
-22. ~Design and UX~
-23. ~Responsive Design and CSS Frameworks~
-24. ~Advanced CSS~
+19. ~Basic HTML Page Structure~
+20. ~Displaying and Inputting Data~
+21. ~CSS~
+22. ~Accessibility~
+23. ~Design and UX~
+24. ~Responsive Design and CSS Frameworks~
+25. ~Advanced CSS~
 
 #### NodeJS
 
-25. Introduction to NodeJS
-26. MongoDB
-27. Express & Mongoose
-28. Authentication
-29. APIs
-30. Testing Express
-31. Final Project
+26. Introduction to NodeJS
+27. MongoDB
+28. Express & Mongoose
+29. Authentication
+30. APIs
+31. Testing Express
+32. Final Project
 
 #### Getting Hired
 
-32. Preparing for your Job Search
-33. Applying to and Interviewing for Jobs
+33. Preparing for your Job Search
+34. Applying to and Interviewing for Jobs
