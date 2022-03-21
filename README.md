@@ -23,7 +23,7 @@
 12. ~JavaScript in the Real World~
 13. ~Asynchronous JavaScript and APIs~
 14. ~Testing JavaScript~
-15. Intermediate Git
+15. ~Intermediate Git~
 16. React JS
 17. JavaScript and the Backend
 18. Finishing up with JavaScript
