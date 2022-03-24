@@ -1,44 +1,39 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 import Listing from "./Listing";
 import Options from "./Options";
 import "../styles/Experience.css";
 
-class Experience extends Component {
-	constructor(props) {
-		super(props);
-		this.state = {
-			jobs: [
-				{
-					role: "Software Engineer",
-					company: "Amazon",
-					duration: "2018 - Present",
-					description:
-						"Ut fugiat minim qui voluptate culpa. Elit nostrud ex ad incididunt incididunt eiusmod. Officia cupidatat culpa commodo nisi nostrud. Ut fugiat minim qui voluptate culpa. Elit nostrud ex ad incididunt incididunt eiusmod. Officia cupidatat culpa commodo nisi nostrud.",
-				},
-				{
-					role: "Web Developer",
-					company: "Google",
-					duration: "2017 - 2018",
-					description:
-						"Ut fugiat minim qui voluptate culpa. Elit nostrud ex ad incididunt incididunt eiusmod. Officia cupidatat culpa commodo nisi nostrud. Ut fugiat minim qui voluptate culpa. Elit nostrud ex ad incididunt incididunt eiusmod. Officia cupidatat culpa commodo nisi nostrud.",
-				},
-				{
-					role: "Web Designer",
-					company: "A Boring Company",
-					duration: "2016 - 2017",
-					description:
-						"Ut fugiat minim qui voluptate culpa. Elit nostrud ex ad incididunt incididunt eiusmod. Officia cupidatat culpa commodo nisi nostrud. Ut fugiat minim qui voluptate culpa. Elit nostrud ex ad incididunt incididunt eiusmod. Officia cupidatat culpa commodo nisi nostrud.",
-				},
-			],
-		};
-		this.addWork = this.addWork.bind(this);
-		this.removeWork = this.removeWork.bind(this);
-	}
+function Experience() {
+	const [jobs, setJobs] = useState({
+		jobs: [
+			{
+				role: "Software Engineer",
+				company: "Amazon",
+				duration: "2018 - Present",
+				description:
+					"Ut fugiat minim qui voluptate culpa. Elit nostrud ex ad incididunt incididunt eiusmod. Officia cupidatat culpa commodo nisi nostrud. Ut fugiat minim qui voluptate culpa. Elit nostrud ex ad incididunt incididunt eiusmod. Officia cupidatat culpa commodo nisi nostrud.",
+			},
+			{
+				role: "Web Developer",
+				company: "Google",
+				duration: "2017 - 2018",
+				description:
+					"Ut fugiat minim qui voluptate culpa. Elit nostrud ex ad incididunt incididunt eiusmod. Officia cupidatat culpa commodo nisi nostrud. Ut fugiat minim qui voluptate culpa. Elit nostrud ex ad incididunt incididunt eiusmod. Officia cupidatat culpa commodo nisi nostrud.",
+			},
+			{
+				role: "Web Designer",
+				company: "A Boring Company",
+				duration: "2016 - 2017",
+				description:
+					"Ut fugiat minim qui voluptate culpa. Elit nostrud ex ad incididunt incididunt eiusmod. Officia cupidatat culpa commodo nisi nostrud. Ut fugiat minim qui voluptate culpa. Elit nostrud ex ad incididunt incididunt eiusmod. Officia cupidatat culpa commodo nisi nostrud.",
+			},
+		],
+	});
 
-	addWork(e) {
-		this.setState({
+	function addWork() {
+		setJobs({
 			jobs: [
-				...this.state.jobs,
+				...jobs,
 				{
 					role: "Course Type",
 					company: "School/Organization",
@@ -49,32 +44,31 @@ class Experience extends Component {
 		});
 	}
 
-	removeWork(e) {
-		const newArr = [...this.state.jobs];
+	function removeWork() {
+		const newArr = [...jobs];
 		newArr.pop();
-		this.setState({
+		setJobs({
 			jobs: newArr,
 		});
 	}
 
-	render() {
-		return (
-			<div className="experience-section">
-				<h2>Work Experience</h2>
-				{this.state.jobs.map((listing) => {
-					return (
-						<Listing
-							role={listing.role}
-							company={listing.company}
-							duration={listing.duration}
-							description={listing.description}
-						/>
-					);
-				})}
-				<Options add={this.addWork} remove={this.removeWork} />
-			</div>
-		);
-	}
+	return (
+		<div className="experience-section">
+			<h2>Work Experience</h2>
+			{jobs.jobs.map((listing, index) => {
+				return (
+					<Listing
+						id={index}
+						role={listing.role}
+						company={listing.company}
+						duration={listing.duration}
+						description={listing.description}
+					/>
+				);
+			})}
+			<Options add={addWork} remove={removeWork} />
+		</div>
+	);
 }
 
 export default Experience;

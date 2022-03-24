@@ -3,7 +3,7 @@ import Experience from "./Experience";
 import Education from "./Education";
 import "../styles/Cv.css";
 
-function Cv(props) {
+function Cv() {
 	return (
 		<div className="cv-main">
 			<General />

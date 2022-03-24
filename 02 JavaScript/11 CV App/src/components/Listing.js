@@ -2,7 +2,7 @@ import "../styles/Listing.css";
 
 function Listing(props) {
 	return (
-		<div className="listing">
+		<div className="listing" id={props.id}>
 			<div className="listing-header">
 				<div className="left">
 					<h4 contentEditable="true" onBlur={props.changeRole}>
