@@ -1,0 +1,18 @@
+.App {
+	text-align: center;
+}
+
+.App-header {
+	background-color: #282c34;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: 1rem;
+	color: white;
+	margin-bottom: 4rem;
+}
+
+body {
+	margin-bottom: 4rem;
+}

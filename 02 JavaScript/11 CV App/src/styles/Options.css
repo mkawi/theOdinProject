@@ -1,0 +1,19 @@
+button {
+	border: 1px solid gray;
+	padding: 0.5rem 0.85rem;
+	margin: 0 0.25rem;
+}
+
+button:hover {
+	opacity: 1;
+}
+
+.add {
+	background-color: rgb(220, 248, 220);
+	opacity: 0.5;
+}
+
+.remove {
+	background-color: rgb(255, 221, 221);
+	opacity: 0.5;
+}

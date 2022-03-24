@@ -1,0 +1,27 @@
+.listing {
+	text-align: left;
+}
+
+.listing-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.listing-header h4 {
+	display: inline-block;
+}
+
+span {
+	padding: 0 0.5rem;
+	border-right: 1px solid gray;
+}
+
+.right h4 {
+	padding-left: 0.5rem;
+}
+
+.listing p {
+	line-height: 1.5rem;
+	margin-top: 0;
+}
