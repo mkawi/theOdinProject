@@ -1,0 +1,15 @@
+.score {
+	text-align: right;
+	margin-bottom: 2rem;
+}
+
+.score h4 {
+	color: white;
+	margin-top: 0;
+	margin-bottom: 0.5rem;
+	font-weight: 100;
+}
+
+.bold {
+	font-weight: 700;
+}

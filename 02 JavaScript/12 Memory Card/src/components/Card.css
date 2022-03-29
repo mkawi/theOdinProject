@@ -1,0 +1,23 @@
+.card {
+	background-color: rgba(0, 0, 0, 0.25);
+	border: 1px solid rgba(0, 0, 0, 0.25);
+	padding: 2rem;
+}
+
+.card:hover {
+	background-color: rgba(0, 0, 0, 0.5);
+	border: 1px solid #374564;
+}
+
+.card img {
+	width: 250px;
+	height: 250px;
+	object-fit: cover;
+	object-position: top;
+}
+
+.card h3 {
+	color: white;
+	font-size: 1.25rem;
+	margin-bottom: 0;
+}
