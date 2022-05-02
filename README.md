@@ -41,7 +41,7 @@
 #### NodeJS
 
 26. ~Introduction to NodeJS~
-27. MongoDB
+27. ~MongoDB~
 28. Express & Mongoose
 29. Authentication
 30. APIs
