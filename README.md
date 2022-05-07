@@ -42,7 +42,7 @@
 
 26. ~Introduction to NodeJS~
 27. ~MongoDB~
-28. Express & Mongoose
+28. ~Express & Mongoose~
 29. Authentication
 30. APIs
 31. Testing Express
