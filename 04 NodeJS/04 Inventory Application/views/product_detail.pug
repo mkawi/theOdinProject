@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  h1 Title: #{product.name}
+
+  p #[strong Price:] £#{product.price}
+  p #[strong Category:]
+    each val, index in product.category
+      a(href=val.url) #{val.name}
+      if index < product.category.length - 1
+        |,
+
+    hr
+    p
+      a(href=product.url+'/delete') Delete Product
+    p
+      a(href=product.url+'/update') Update Product

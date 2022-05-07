@@ -1,0 +1,24 @@
+extends layout
+
+block content
+
+  h1 Category: #{category.name}
+
+  div(style='margin-left:20px;margin-top:20px')
+
+    h4 Products
+
+    dl
+      each product in category_products
+        dt
+          a(href=product.url) #{product.name}
+        dd #{product.price}
+
+      else
+        p This category has no products
+
+  hr
+  p
+    a(href=category.url+'/delete') Delete Category
+  p
+    a(href=category.url+'/update') Update Category
