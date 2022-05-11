@@ -1,0 +1,38 @@
+extends layout
+
+block content
+  div.container
+    if currentUser && currentUser.isMember
+      div.messages.container
+        if messages
+          for message in messages
+            div.message-container
+              div
+                h1.title= message.title 
+                p.text= message.text
+              div.message-detail-container
+                div.avatar-username-container
+                  div.avatar-message
+                    a(href=message.user.url)
+                      p.username-message= message.user.username
+                    a(href=message.user.url)
+                      img(src=`/images/${message.user.avatar}.svg`)
+                div.timestamp-container
+                  p.timestamp-message= message.readableDate
+                if currentUser.isAdmin
+                  form(method="POST", action='/delete-message-admin')
+                    input(type="password" id="targetMessage", name="targetMessage" value=`${message._id}` style="display: none") 
+                    button.delete-button Delete  
+    else
+      div.messages.container
+        if messages
+          for message in messages
+            div.message-container
+              div
+                h1.title= message.title 
+                p.text= message.text
+              div.message-detail-container
+                div.avatar-username-container
+                  div(class="avatar-message anonymous")
+                    img(src=`/images/default.svg` alt="avatar" class="anonymous")
+                    p(class="username-message anonymous") anonymous

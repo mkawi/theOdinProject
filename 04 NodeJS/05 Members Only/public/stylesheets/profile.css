@@ -1,0 +1,140 @@
+.avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.avatar img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+}
+
+.profile-top {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+}
+
+.profile-top-right {
+    display: flex;
+    height: 100px;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding-left: 16px;
+}
+
+.username {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.email {
+    font-size: 16px;
+    font-weight: 300;
+    font-style: italic;
+
+    margin: 0;
+}
+
+.admin {
+    font-size: 16px;
+    font-weight: bold;
+
+    margin: 0;
+}
+
+.top-form {
+    display: flex;
+    width: 100%;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+#logout {
+    margin-top: 24px;
+    color: #d9ddeb;
+    background: transparent;
+    border: 2px solid #d9ddeb;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#delete {
+    margin-top: 16px;
+    text-align: left;
+    color: #6edcd9;
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+    width: 100px;
+}
+
+#delete:hover {
+    text-decoration: underline;
+}
+
+.profile-header {
+    font-size: 24px;
+    font-weight: bold;
+
+    margin-top: 32px;
+    margin-bottom: 16px;
+}
+
+.submit {
+    margin-top: 24px;
+    color: #d9ddeb;
+    background: transparent;
+    border: 2px solid #d9ddeb;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.delete-button {
+    margin-top: 24px;
+    color: #d9ddeb;
+    background: transparent;
+    border: 2px solid #d9ddeb;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.delete-button:hover,
+.submit:hover,
+#logout:hover {
+    color: #332fd0;
+    background-color: #d9ddeb;
+    transition: 0.3s;
+}
+
+/* Media queries */
+
+@media screen and (min-width: 1024px) {
+    .profile-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .profile-form {
+        width: 634px;
+    }
+
+    .top-form {
+        width: 634px;
+    }
+
+    .profile-top {
+        width: 634px;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .posts {
+        align-items: center;
+    }
+}

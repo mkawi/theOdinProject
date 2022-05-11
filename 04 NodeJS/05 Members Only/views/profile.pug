@@ -1,0 +1,72 @@
+extends layout
+
+block content
+    div.container
+        if currentUser
+            div.profile-container
+                div.profile-top
+                    div.avatar
+                        img(src=`/images/${currentUser.avatar}.svg`)
+                    |
+                    div.profile-top-right
+                        div
+                            h1.username= currentUser.username
+                            h5.email= currentUser.email
+                        if currentUser.isMember && !currentUser.isAdmin
+                            h5.admin Member
+                        if currentUser.isAdmin
+                            h5.admin Admin
+                div.top-form
+                    form(action='/delete-account' method='POST')
+                        button( type="submit" id="delete") Delete account
+                    form(action='/logout' method='POST')
+                        button( type="submit" id="logout" ) LOGOUT
+                if !currentUser.isMember
+                    form(method="POST", action='/code' class="profile-form" ) 
+                        div.form-div
+                            label(for="code") Enter membership code
+                            input(type="text" id="code", name="code" required="true")
+                        button(type="submit" class="submit") Submit
+                        if errors 
+                            ul
+                                for error in errors
+                                    li= error.msg 
+                if currentUser.isMember
+                    h2.profile-header Add post
+                    form(method="POST", action='/message'  class="profile-form" ) 
+                        div.form-div
+                            label(for="title") Title
+                            input(type="text" id="title", name="title" required="true")
+                        div.form-div
+                            label(for="text") Message
+                            textarea(id="text", name="text" required="true")
+                        button(type="submit" class="submit") Submit
+                        if errorsPost
+                            ul
+                                for error in errorsPost
+                                    li= error.msg             
+
+                div.posts
+                    h2.profile-header Your posts
+                    if currentUser && currentUser.isMember
+                        div.messages.container
+                            if messages
+                                for message in messages
+                                    div.message-container
+                                        div
+                                            h1.title= message.title 
+                                            p.text= message.text
+                                        div.message-detail-container
+                                            div.avatar-username-container
+                                                div.avatar-message
+                                                    a(href=message.user.url)
+                                                        p.username-message= message.user.username
+                                                    a(href=message.user.url)
+                                                        img(src=`/images/${message.user.avatar}.svg`)
+                                            div.timestamp-container
+                                                p.timestamp-message= message.readableDate
+                                                
+                                            form(method="POST", action='/delete-message')
+                                                input(type="password" id="targetMessage", name="targetMessage" value=`${message._id}` style="display: none") 
+                                                input(type="password" id="targetUser", name="targetUser" value=`${message.user._id}` style="display: none") 
+                                                button.delete-button Delete

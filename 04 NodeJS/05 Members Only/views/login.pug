@@ -1,0 +1,30 @@
+extends layout
+
+block content
+  div.container
+    if registered
+      div.registered-container
+        h1 You have registered, please log in to continue.
+    div.login-form-container
+      form(method="POST", action='/login' class="login-form") 
+        div.form-div
+          label(for="email") Email:
+          input(type="email" id="email", name="email" required="true")
+        div.form-div
+          label(for="password") Password:
+          input(type="password" id="password", name="password" required="true")
+        button(type="submit" class="submit") Submit
+      
+      div.register-link
+        a(href="/register" ) REGISTER
+
+      if errors
+        ul
+          for error in errors
+            li= error.msg
+      
+      if message
+        p= message
+
+      if currentUser 
+        p= currentUser.username
