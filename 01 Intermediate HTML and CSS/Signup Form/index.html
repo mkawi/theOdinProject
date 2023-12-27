@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" href="style.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Signup Form</title>
+	</head>
+	<body>
+		<div class="banner">
+			<img src="./odin-lined.png" alt="The Odin Project Logo" id="logo" />
+		</div>
+		<main>
+			<h1>Get started</h1>
+			<form>
+				<div class="form-inputs">
+					<div class="left-side">
+						<label for="first-name"
+							>First Name<span style="color: red">*</span></label
+						>
+						<input
+							type="text"
+							name="first-name"
+							id="first-name"
+							placeholder="First Name"
+							required
+						/>
+						<label for="email">Email<span style="color: red">*</span></label>
+						<input
+							type="email"
+							name="email"
+							id="email"
+							placeholder="Email"
+							required
+						/>
+						<label for="pass">Password<span style="color: red">*</span></label>
+						<input
+							type="password"
+							name="pass"
+							id="pass"
+							placeholder="Password"
+							required
+						/>
+					</div>
+					<div class="right-side">
+						<label for="last-name"
+							>Last Name<span style="color: red">*</span></label
+						>
+						<input
+							type="text"
+							name="last-name"
+							id="last-name"
+							placeholder="Last Name"
+							required
+						/>
+						<label for="phone-number">Phone Number</label>
+						<input
+							type="text"
+							name="phone-number"
+							id="phone-number"
+							placeholder="Phone Number"
+						/>
+						<label for="confirm-pass"
+							>Confirm Password<span style="color: red">*</span></label
+						>
+						<input
+							type="password"
+							name="confirm-pass"
+							id="confirm-pass"
+							placeholder="Confirm Password"
+							required
+						/>
+					</div>
+				</div>
+				<button>Create Account</button>
+				<p class="already-acc">Already have an account?</p>
+			</form>
+		</main>
+		<script>
+			const form = document.querySelector("form");
+			const formFields = document.querySelectorAll("input");
+
+			const pass = document.querySelector("#pass");
+			const confirmPass = document.querySelector("#confirm-pass");
+
+			const onFormValidation = ({ target }, forceValidation) => {
+				const setDefault = (element) => {
+					element.classList.remove("invalid");
+					element.classList.remove("valid");
+				};
+				const setValid = (element) => {
+					element.classList.remove("invalid");
+					element.classList.add("valid");
+				};
+				const setInvalid = (element) => {
+					element.classList.remove("valid");
+					element.classList.add("invalid");
+				};
+
+				if (!target.value && !forceValidation) return setDefault(target);
+
+				console.log(pass);
+				console.log(confirmPass);
+				switch (target.id) {
+					case "first-name":
+					case "last-name":
+						if (/[a-z]{3}/i.test(target.value)) return setValid(target);
+						break;
+					case "email":
+						if (/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/i.test(target.value))
+							return setValid(target);
+						break;
+					case "pass":
+						if (
+							/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/i.test(
+								target.value
+							)
+						)
+							return setValid(target);
+						break;
+					case "confirm-pass":
+						if (
+							/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/i.test(
+								target.value
+							) &&
+							pass.value === confirmPass.value
+						)
+							return setValid(target);
+						break;
+					case "phone-number":
+						if (
+							/^([+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*|)$/.test(
+								target.value
+							)
+						)
+							return setValid(target);
+				}
+
+				return setInvalid(target);
+			};
+
+			const onSubmit = (event) => {
+				event.preventDefault();
+
+				const isValid = [...formFields].every((field) => {
+					onFormValidation({ target: field }, true);
+					return field.classList.contains("valid");
+				});
+
+				if (!isValid) document.querySelector("h1").appendChild("Success!");
+			};
+
+			form.addEventListener("submit", onSubmit);
+
+			formFields.forEach((field) =>
+				field.addEventListener("blur", onFormValidation)
+			);
+		</script>
+	</body>
+</html>

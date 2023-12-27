@@ -20,7 +20,7 @@
 
 - [x] Intermediate HTML Concepts
 - [x] Intermediate CSS Concepts
-- [ ] Forms
+- [x] Forms
 - [ ] Grid
 
 #### JavaScript
