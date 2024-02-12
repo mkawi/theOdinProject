@@ -1,0 +1,153 @@
+html, :root {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: #F6F7FB;
+    display: grid;
+    grid-template-columns: minmax(200px, 20%) 80%;
+}
+
+aside {
+    background-color: rgb(23, 21, 34);
+    color: white;
+    grid-column: span 1;
+}
+
+.logo {
+    font-family: 'Inter', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    padding: 3rem 2rem 0 2rem;
+}
+
+.menu-row {
+    color: rgb(191, 162, 219);
+    padding: 1rem 2rem;
+}
+
+.active, .menu-row:hover {
+    color: white;
+    background-color: rgb(45, 35, 63);
+    border-right: 5px solid rgb(152, 2, 197);
+}
+
+aside hr {
+    margin: 2rem 1rem;
+    border-color: rgb(30, 15, 48);
+}
+
+main {
+    background-color: #F6F7FB;
+    grid-column: 0 / -1;
+}
+
+main h1 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: rgb(45, 35, 63);
+}
+
+header {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+}
+
+header .menu {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.menu-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    gap: 1rem;
+    color: rgb(194, 194, 194);
+}
+
+.menu-icons i:hover {
+    color: purple;
+}
+
+#nav-search {
+    background-color: rgb(243, 243, 243);
+    min-width: 250px;
+    padding: 0.45rem 0.5rem;
+    margin-right: -1rem;
+    border-radius: 14px;
+    border: 1px solid transparent;
+}
+
+#nav-search:focus-visible {
+    outline: 1px solid purple;
+}
+
+header .vertical-bar {
+    color: rgb(221, 221, 221);
+    padding: 0 1rem;
+}
+
+header .profile {
+    color: rgb(122, 122, 122);
+    font-size: 0.85rem;
+}
+
+header .profile i {
+    color: rgb(194, 194, 194);
+    font-size: 0.85rem;
+}
+
+.breadcrumbs {
+    font-size: 0.75rem;
+    color: rgb(122, 122, 122);
+}
+
+.container {
+    margin-top: 1rem;
+    padding: 1.5rem;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    gap: 1.5rem;
+}
+
+.card {
+    background-color: white;
+    min-height: 150px;
+    border-radius: 6px;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.05);
+}
+
+.customers-card {
+    grid-column: span 4;
+    grid-row: span 2;
+}
+
+.chart {
+    grid-column: span 8;
+    grid-row: span 3;
+}
+
+.latest-activity {
+    grid-column: 9 / -1;
+    grid-row: 1 / 4
+}
+
+.announcements {
+    grid-column: 9 / -1;
+    grid-row: 4 / 8;
+}

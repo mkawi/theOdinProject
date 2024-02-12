@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Perkify Dashboard</title>
+	</head>
+	<body>
+		<aside>
+			<div class="logo">Perkify</div>
+			<hr />
+			<nav class="sidebar-primary-menu">
+				<div class="menu-row active">Dashboard</div>
+				<div class="menu-row">Analytics</div>
+				<div class="menu-row">Loyalty Programs</div>
+				<div class="menu-row">Customers</div>
+				<div class="menu-row">Account</div>
+				<div class="menu-row">Activity Log</div>
+			</nav>
+			<hr />
+			<nav class="sidebar-secondary-menu">
+				<div class="menu-row">Settings</div>
+				<div class="menu-row">Support</div>
+				<div class="menu-row">Privacy</div>
+			</nav>
+		</aside>
+		<main>
+			<header>
+				<div class="breadcrumbs">Home > Dashboard</div>
+				<div class="menu">
+					<input type="search" id="nav-search" />
+					<i
+						class="fa-solid fa-search"
+						style="
+							color: rgb(190, 190, 190);
+							position: relative;
+							right: 15px;
+							font-size: 0.85rem;
+						"
+					></i>
+					<div class="vertical-bar">|</div>
+					<div class="menu-icons">
+						<i class="fa-solid fa-bell" style="color: rgb(2, 163, 2)"></i>
+						<i class="fa-solid fa-moon"></i>
+						<i class="fa-solid fa-arrow-right-from-bracket"></i>
+					</div>
+					<div class="vertical-bar">|</div>
+					<div class="profile">
+						Hamoudi
+						<i
+							class="fa-solid fa-user"
+							style="font-size: 1rem; padding: 0 0.75rem"
+						></i>
+					</div>
+				</div>
+			</header>
+			<div class="container">
+				<h1>Dashboard</h1>
+				<div class="cards">
+					<div class="card customers-card"></div>
+					<div class="card customers-card"></div>
+					<div class="card chart"></div>
+					<div class="card chart"></div>
+					<div class="card latest-activity"></div>
+					<div class="card announcements"></div>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>
