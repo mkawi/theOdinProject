@@ -43,13 +43,13 @@
 #### React
 
 - [x] Introduction
-- [ ] Getting Started with React
-- [ ] States And Effects
-- [ ] Class Components
-- [ ] React Testing
-- [ ] The React Ecosystem
-- [ ] More React Concepts
-- [ ] Conclusion
+- [x] Getting Started with React
+- [x] States And Effects
+- [x] Class Components
+- [x] React Testing
+- [x] The React Ecosystem
+- [x] More React Concepts
+- [5] Conclusion
 
 #### NodeJS
 
