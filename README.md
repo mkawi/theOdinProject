@@ -49,7 +49,7 @@
 - [x] React Testing
 - [x] The React Ecosystem
 - [x] More React Concepts
-- [5] Conclusion
+- [x] Conclusion
 
 #### NodeJS
 
